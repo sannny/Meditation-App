@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".media_page">
+
+
+    <fragment
+        android:id="@+id/youtubeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:name="com.google.android.youtube.player.YouTubePlayerFragment">
+    </fragment>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+       <androidx.coordinatorlayout.widget.CoordinatorLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <com.google.android.material.tabs.TabLayout
+               android:id="@+id/tabs_media"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+       </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager_media"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
