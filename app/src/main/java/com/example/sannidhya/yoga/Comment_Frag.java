@@ -40,7 +40,7 @@ import static android.text.Html.fromHtml;
 public class Comment_Frag extends Fragment {
     public String video_id="3pGC0oCs4fA";
     private ProgressDialog pDialog;
-    final protected String Dev_key="AIzaSyCOcRykvb1FIm3s2S6XGElZFtDAQrB-4t0";
+    final protected String Dev_key="<enter your API key>";
     public ArrayList<Comments_list> Comments;
     RecyclerView recyclerView;
     Context mcontext;
